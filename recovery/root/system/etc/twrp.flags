@@ -34,6 +34,8 @@
 /vendor_image_a           emmc      /dev/block/mapper/vendor_a                                  flags=display="Vendor Image A";flashimg=1
 /product_image_a          emmc      /dev/block/mapper/product_a                                 flags=display="Product Image A";flashimg=1
 /system_ext_image_a       emmc      /dev/block/mapper/system_ext_a                            flags=display="System_EXT Image A";flashimg=1
+/vendor_dlkm_image_a       emmc      /dev/block/mapper/vendor_dlkm_a                            flags=display="Vndor_dlkm Image A";flashimg=1
+/odm_image_a       emmc      /dev/block/mapper/odm_a                            flags=display="Odm Image A";flashimg=1
 
 
 
@@ -41,6 +43,14 @@
 /vendor_image_b           emmc          /dev/block/mapper/vendor_b                           flags=display="Vendor Image B";flashimg=1
 /product_image_b          emmc         /dev/block/mapper/product_b                           flags=display="Product Image B";flashimg=1
 /system_ext_image_b       emmc        /dev/block/mapper/system_ext_b                         flags=display="System_EXT Image B";flashimg=1
+/vendor_dlkm_image_b       emmc      /dev/block/mapper/vendor_dlkm_b                            flags=display="Vndor_dlkm Image B";flashimg=1
+/odm_image_b       emmc      /dev/block/mapper/odm_b                           flags=display="Odm Image B";flashimg=1
+
+/super             emmc           /dev/block/by-name/super                      flags=display="Super";flashimg
+
+/userdata_default             emmc           /dev/block/by-name/userdata                     flags=display="Userdata default";flashimg
+/userdata_mapper             emmc           /dev/block/mapper/userdata                      flags=display="Userdata Mapper";flashimg
+
 
 
 # Dynamic Partitions ( A Slots )
