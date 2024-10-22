@@ -90,7 +90,7 @@ BOARD_HAS_LARGE_FILESYSTEM := true
 BOARD_VENDOR_BOOTIMAGE_PARTITION_SIZE := $(BOARD_BOOTIMAGE_PARTITION_SIZE)
 BOARD_SUPER_PARTITION_SIZE := 9126805504 # TODO: Fix hardcoded value
 BOARD_SUPER_PARTITION_GROUPS := group_unisoc
-BOARD_GROUP_UNISOC_PARTITION_LIST := system system_ext product vendor vendor_dlkm
+BOARD_GROUP_UNISOC_PARTITION_LIST := system system_ext product vendor vendor_dlkm odm
 BOARD_GROUP_UNISOC_SIZE := 9122611200 # TODO: Fix hardcoded value
 # https://source.android.com/devices/bootloader/partitions/generic-boot#combinations, "Launch device without recovery partition":
 
@@ -115,7 +115,7 @@ BOARD_SUPPRESS_SECURE_ERASE := true
 
 # Verified Boot
 BOARD_AVB_ENABLE := true
-BOARD_AVB_VBMETA_SYSTEM := system system_ext product vendor
+BOARD_AVB_VBMETA_SYSTEM := system system_ext product vendor vendor_dlkm odm
 BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --set_hashtree_disabled_flag
 BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --flags 4
 BOARD_AVB_BOOT_KEY_PATH := external/avb/test/data/testkey_rsa4096.pem
